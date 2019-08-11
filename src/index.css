@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800|Quicksand:400,700");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #00994c;
+}
+
+/*  navbar stylings  */
+.navbar {
+  padding: 0.5% 3%;
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  padding-right: 0;
+  color: #00994c;
+}
+
+.nav.navbar-nav  {
+  color: #00994c;
+}
+
+.brand-name {
+  letter-spacing: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: #00994c;
+}
+
+.brand-name-nav:hover {
+  color: #00994c;
+}
+
+.nav.navbar-nav.navbar-right * {
+  color: #00994c;
+}
+
+.nav.navbar-nav.navbar-right.white * {
+  color: #ffffff;
+}
+
+.nav.navbar-nav.navbar-right.white *:hover {
+  color: #00994c;
+}
+
+.nav.navbar-nav.navbar-right.white#spacer:hover {
+  background-color: transparent;
+}
+
+.dropdown-menu.purple {
+  background-color: #00994c;
+}
+
+.get-started-btn {
+  border: none;
+  transition: background-color 0.5s ease;
+  background-color: #00994c;
+  color: #ffffff;
+}
+
+.get-started-btn:hover {
+  border: none;
+  background-color: #ffffff;
+  color: #00994c;
+  border: solid 1px #00994c;
+}
+
+.spacer {
+  margin-top: 14px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+/*  contents stylings  */
+
+#home-landing {
+  height: 95vh;
+  background-image: url("./img/home-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 8%;
+}
+
+#home-landing img {
+  width: 100%;
+}
+
+#banner-header {
+  font-size: 70px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+#banner-content {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+
+.purple {
+  color: #00994c;
+}
+
+.get-started-btn.wide {
+  width: 40%;
+  padding: 2%;
+}
+
+.chart-container {
+  padding: 5% 8%;
+  background-color: #fafafa;
+}
+
+.chart-content {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.slide-container {
+  padding: 5% 8%;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-inner {
+  margin-bottom: 50px;
+}
+
+.carousel-indicators li {
+  width: 30px;
+  height: 5px;
+  background-color: #c4c4c4;
+  border: none;
+  bottom: -50px;
+}
+
+.carousel-indicators .active {
+  width: 30px;
+  height: 6px;
+  background-color: #00994c;
+  border: none;
+  bottom: -50px;
+}
+
+.card-container {
+  padding: 5% 3%;
+}
+
+.panel {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.panel-image img {
+  width: 100%;
+}
+
+.panel-body {
+  padding: 10%;
+}
+
+.panel-body button {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.testimonials-container {
+  padding: 5% 12%;
+  background-color: #fafafa;
+}
+
+.testimonials-carousel {
+  padding: 0 5%;
+}
+
+.testimonials-inner {
+  padding: 0 6%;
+  margin-bottom: 150px;
+}
+
+.testimonials-indicators {
+  height: 100px;
+  bottom: -150px;
+}
+
+.testimonials-indicators li {
+  transition: background-image 0.5s ease;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.testimonials-indicators .active {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: solid 2px #00994c;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-control {
+  color: #00994c;
+}
+
+.carousel-control:hover {
+  color: #00994c;
+}
+
+.glyphicon {
+  color: #00994c;
+}
+
+#person-1 {
+  background-image: url("./img/person-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#person-2 {
+  background-image: url("./img/person-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#person-3 {
+  background-image: url("./img/person-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*  footer stylings  */
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #00994c;
+  color: #ffffff;
+  padding: 6% 4%;
+  padding-right: 4%;
+  font-family: "Quicksand", sans-serif;
+}
+
+#footer-icons {
+  float: right;
+}
+
+.icon {
+  height: 30px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav.navbar-nav.navbar-right {
+    overflow-x: hidden;
+  }
+  #spacer {
+    display: none;
+  }
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  #home-landing img {
+    height: 100%;
+  }
+  .get-started-btn.wide {
+    width: initial;
+    padding: 2%;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    background-color: #f5f5f5;
+  }
+
+  #banner-header {
+    font-size: 45px;
+  }
+
+  .chart {
+    width: 100%;
+  }
+  .testimonials-container {
+    padding: 5% 5%;
+    background-color: #fafafa;
+  }
+  .testimonials-indicators li {
+    display: none;
+  }
+  .testimonials-indicators .active {
+    display: block;
+    margin: auto;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 780px) {
+  #home-landing {
+    background-image: url("./img/home-banner-small.png");
+  }
+  .testimonials-indicators li {
+    display: none;
+  }
+  .testimonials-indicators .active {
+    display: block;
+    margin: auto;
+    margin-top: 0;
+  }
+}
