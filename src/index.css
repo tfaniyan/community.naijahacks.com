@@ -36,7 +36,18 @@ body::-webkit-scrollbar-thumb {
   background-color: #00994c;
 }
 
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+p {
+    margin: 0 0 10px;
+}
 /*  navbar stylings  */
+
 .navbar {
   padding: 0.5% 3%;
   background-color: #ffffff;
@@ -50,7 +61,7 @@ body::-webkit-scrollbar-thumb {
   color: #00994c;
 }
 
-.nav.navbar-nav  {
+.nav.navbar-nav li a {
   color: #00994c;
 }
 
@@ -58,7 +69,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 5px;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
-  color: #00994c;
+  /*color: #00994c;*/
 }
 
 .brand-name-nav:hover {
@@ -72,6 +83,7 @@ body::-webkit-scrollbar-thumb {
 .nav.navbar-nav.navbar-right.white * {
   color: #ffffff;
 }
+
 
 .nav.navbar-nav.navbar-right.white *:hover {
   color: #00994c;
@@ -343,4 +355,10 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     margin-top: 0;
   }
+}
+@media (min-width: 768px) {
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+}
 }
