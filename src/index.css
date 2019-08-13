@@ -69,11 +69,11 @@ p {
   letter-spacing: 5px;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
-  color: #00994c;
+  color: #00994c !important;
 }
 
 .brand-name-nav:hover {
-  color: #00994c;
+  color: #333;
 }
 
 .nav.navbar-nav.navbar-right * {
