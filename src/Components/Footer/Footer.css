@@ -1,0 +1,25 @@
+.brand-name{
+    color: #ffffff;
+}
+
+.get-started-btn {
+    border: 1px solid #ffffff;
+}
+
+
+element.style {
+    width: 511px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul{
+    width:511px;
+}

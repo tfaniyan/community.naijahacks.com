@@ -1,6 +1,7 @@
 import * as React from "react";
 import logo from "../../img/favicon.png";
 import { Nav, Navbar, Form, Button } from "react-bootstrap";
+import './Header.css';
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         <Navbar.Brand href="/">
           <img src={logo} style={{ height: "40px" }} alt="NaijaHack-logo" />
         </Navbar.Brand>
-        <Nav.Link href="/" className="brand-name brand-name-nav">
+        <Nav.Link href="/" className="name-brand brand-name brand-name-nav">
           NaijaHacks
         </Nav.Link>
         <Navbar.Toggle />

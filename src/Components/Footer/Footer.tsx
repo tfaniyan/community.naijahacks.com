@@ -2,6 +2,7 @@ import * as React from "react";
 import twitter from "../../img/twitter.png";
 import instagram from "../../img/instagram.png";
 import facebook from "../../img/facebook.png";
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -47,17 +48,17 @@ const Footer = () => {
                 <a href="#">Contact</a>
               </li>
               <li id="spacer">
-                <p className="spacer">|</p>
+                <span className="spacer">|</span>
               </li>
               <li>
                 <a href="#">Login</a>
               </li>
               <li>
-                <form className="navbar-form">
+             
                   <button className="btn btn-default get-started-btn">
                     GET STARTED
                   </button>
-                </form>
+               
               </li>
             </ul>
           </div>

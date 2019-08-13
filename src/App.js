@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
-
 import "./App.css";
+
+
+
 import Home from "./Pages/Home";
 import SignUp from "./Pages/SignUp";
 import Profile from "./Pages/Profile";
