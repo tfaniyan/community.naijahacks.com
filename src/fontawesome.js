@@ -2,7 +2,7 @@
  * TODO: How to use fontawesome with react
  * 1. All fontawesome icons needed can be added here, then import this file
  * to component that need any of the icons to consume it.
- * 2. Check Pages/Community/community.tsx file for a sample.
+ * 2. Check SearchHeader component file for a sample.
  * 3. Visit https://fontawesome.com/icons to pick icons you need
  * 4. Follow https://scotch.io/tutorials/using-font-awesome-5-with-react#toc-using-icons-from-specific-packages 
  * to understand how to use fontawesome icons with react

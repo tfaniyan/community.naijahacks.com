@@ -2,12 +2,6 @@
     --portal-dark-color: #252A34;
 }
 
-.search-btn {
-    background: none;
-    border: 0;
-    outline: 0 none;
-}
-
 .portal-header {
     background: var(--portal-dark-color);
     background-image: url(../../img/portal/dev.png);
@@ -17,6 +11,9 @@
     min-height: 400px;
 }
 
-.portal-nav {
-    background: var(--portal-dark-color);
+@media screen and (max-width: 680px) {
+
+    .portal-header {
+        background-size: 200px;
+    }
 }
