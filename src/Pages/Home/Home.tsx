@@ -7,12 +7,15 @@ import stairwellImg from "../../img/stairwell.png";
 import booksImg from "../../img/books.png";
 import { Carousel, Button} from "react-bootstrap";
 
+import Header from "../../Components/Header";
+
 const Home = props => {
   useEffect(() => {
   });
 
   return (
     <>
+      <Header />
       <section className="landing-page">
         <div id="home-landing">
           <div className="container-fluid">
