@@ -4,8 +4,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import "./App.css";
-
-
+import './fontawesome';
 
 import Home from "./Pages/Home";
 import SignUp from "./Pages/SignUp";
