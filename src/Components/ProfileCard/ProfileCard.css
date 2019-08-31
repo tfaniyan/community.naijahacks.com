@@ -48,3 +48,16 @@
 .rate-icon.active {
     color: var(--active-rate-color);
 }
+
+.network__share-button {
+    cursor: pointer;
+}
+
+.popup-header {
+    background: var(--active-rate-color);
+    border:1px solid var(--active-rate-color);
+}
+
+#popover-basic {
+    border:1px solid var(--portal-green-color);
+}

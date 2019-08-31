@@ -3,7 +3,7 @@ import "./Community.css";
 import SearchHeader from "../../Components/SearchHeader";
 import FilterBox from "../../Components/FilterBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Dropdown } from "react-bootstrap";
 import ProfileCard from "../../Components/ProfileCard";
 import axios from 'axios';
 
@@ -41,7 +41,18 @@ class Community extends React.Component {
         <FilterBox />      
         <section className="" style={{ position: 'relative', top: '-40px' }}>
           <header className="sortby-cont mb-3">
-            <p className="text-muted text-left">Sort by <FontAwesomeIcon icon="chevron-down"/></p>
+            {/* <p className="text-muted text-left">Sort by <FontAwesomeIcon icon="chevron-down"/></p> */}
+            <Dropdown className="text-left">
+              <Dropdown.Toggle id="sort-by" size="sm" className="text-muted text-left">
+                Sort by <FontAwesomeIcon icon="chevron-down"/>
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item href="#">Name</Dropdown.Item>
+                <Dropdown.Item href="#">State</Dropdown.Item>
+                <Dropdown.Item href="#">Job role</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </header>
           <Row>
             { 
