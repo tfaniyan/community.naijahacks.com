@@ -12,7 +12,16 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 // import your icons
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { 
+    faSearch,
+    faChevronDown,
+    faMobileAlt,
+    faMapMarkerAlt,
+    faShareAlt,
+    faEye,
+    faStar,
+    faUserTag
+ } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import {
     faGithubAlt,
@@ -23,6 +32,13 @@ import {
 
 library.add(
     faSearch,
+    faChevronDown,
+    faMobileAlt,
+    faMapMarkerAlt,
+    faShareAlt,
+    faEye,
+    faStar,
+    faUserTag,
     faCheckCircle,
     faGithubAlt,
     faGoogle,

@@ -1,0 +1,50 @@
+:root {
+    --portal-dark-color: #252A34;
+    --portal-green-color: #66E348;
+    --active-rate-color: #FBBC1B;
+    --disable-rate-color: #9E9E9E;  
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    position: relative;
+    bottom: -40px;
+}
+
+.profile-header {
+    min-height: 100px;
+    background: var(--portal-dark-color);
+}    
+
+.fab-btn {
+    border-radius: 50%;
+    padding: 1rem;
+    width: 48px;
+    height: 48px;
+    background: var(--portal-green-color);
+    border: 1px solid var(--portal-green-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+}
+
+.fab-btn:hover,
+.fab-btn:focus {
+    border-radius: 50%;
+    padding: 1rem;
+    width: 48px;
+    height: 48px;
+    background: var(--portal-green-color);
+    border: 1px solid var(--portal-green-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rate-icon {
+    color: var(--disable-rate-color);
+
+}
+.rate-icon.active {
+    color: var(--active-rate-color);
+}

@@ -1,0 +1,74 @@
+{
+    "users": [
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Fullstack Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Frontend Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Backend Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "User Interface",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Fullstack Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Fullstack Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Fullstack Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Fullstack Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Fullstack Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+        {
+            "fullname": "Ahmed Olanrewaju",
+            "role": "Fullstack Developer",
+            "phone": "08093570289",
+            "city": "Lagos, Nigeria",
+            "rating": 5
+        },
+    ]
+}

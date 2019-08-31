@@ -1,11 +1,16 @@
 import React from "react";
 import "./Community.css";
-import { Form, Col } from "react-bootstrap";
-
 import SearchHeader from "../../Components/SearchHeader";
 import FilterBox from "../../Components/FilterBox";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Container, Row } from "react-bootstrap";
+
+import ProfileCard from "../../Components/ProfileCard";
 
 const Community = props => {
+
+  //get users
+  
 
   return (
     <>
@@ -14,9 +19,17 @@ const Community = props => {
       <h2 className="text-white mb-5">"Find talents on our portal"</h2>
     </header>
     
-    <main className="container py-5">
+    <Container className="container py-5">
       <FilterBox />      
-    </main>
+      <section className="" style={{ position: 'relative', top: '-40px' }}>
+        <header className="sortby-cont mb-3">
+          <p className="text-muted text-left">Sort by <FontAwesomeIcon icon="chevron-down"/></p>
+        </header>
+        <Row>
+          <ProfileCard />
+        </Row>
+      </section>
+    </Container>
     </>
   );
 };
