@@ -10,20 +10,17 @@ const Community = props => {
 
   return (
     <>
-    <header>
-      <Navbar className="portal-bg">
+    <header className="portal-header d-flex flex-column justify-content-between">
+      <Navbar className="portal-nav justify-content-between">
+        <div className="d-flex flex-row justify-content-center">
         <Navbar.Brand href="/">
           <img src={logo} style={{ height: "40px" }} alt="NaijaHack-logo" />
         </Navbar.Brand>
         <Nav.Link href="/" className="name-brand brand-name brand-name-nav">
           NaijaHacks
-        </Nav.Link>
-        <Navbar.Toggle />
-        
+        </Nav.Link> 
+        </div>       
         <Form inline>
-          {/* <Nav.Link />
-          <FontAwesomeIcon icon="search" className="text-white btn search-btn" />
-          </Nav.Link> */}
           <Button
             type="submit "
             className="search-btn"
@@ -34,6 +31,7 @@ const Community = props => {
           </Button>
         </Form>
       </Navbar>
+      <h2 className="text-white">"Find talents on our portal"</h2>
     </header>
     
     <section>

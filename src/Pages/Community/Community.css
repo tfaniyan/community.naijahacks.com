@@ -1,11 +1,22 @@
+:root {
+    --portal-dark-color: #252A34;
+}
+
 .search-btn {
     background: none;
     border: 0;
     outline: 0 none;
 }
 
-/* #009 */
+.portal-header {
+    background: var(--portal-dark-color);
+    background-image: url(../../img/portal/dev.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+    min-height: 400px;
+}
 
-.portal-bg {
-    background: #252A34;
+.portal-nav {
+    background: var(--portal-dark-color);
 }
