@@ -2,14 +2,14 @@
     --portal-dark-color: #252A34;
     --portal-gray-color: #ededef;
     --portal-light-green: #00994c;
-    --portal-dark-green: #009048;
+    --portal-dark-green: #00440e;
 }
 
 .portal-header {
-    background: var(--portal-light-green); 
-    background-image: url(../../img/portal/dev.png), url(../../img/favicon.png);;
-    background-repeat: no-repeat, repeat;
-    background-size: 300px, 1px;
+    background: var(--portal-dark-green); 
+    background-image: url(../../img/portal/dev.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
     background-position: center;
     min-height: 400px;
 }
