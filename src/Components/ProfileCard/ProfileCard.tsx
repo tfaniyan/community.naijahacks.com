@@ -90,7 +90,7 @@ const ProfileCard = (props) => {
     const profileCard = e.target.closest('.card-footer').previousSibling;
     domtoimage.toBlob(profileCard)
       .then(function (blob) {
-          saveAs(blob, `naijahacks-profile_${user._id}.png`);
+          saveAs(blob, `${user.fullname}.png`);
       });
   }
   
