@@ -3,8 +3,6 @@ import { Col, Card, Button, Badge, OverlayTrigger, Popover } from "react-bootstr
 import { Link } from "react-router-dom";
 import avatar from "../../img/portal/female-glass.png";
 import './ProfileCard.css';
-
-// import your fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   FacebookShareButton,
@@ -19,7 +17,8 @@ import {
   WhatsappIcon,  
   EmailIcon,
 } from 'react-share';
-
+import { saveAs } from 'file-saver';
+import domtoimage from 'dom-to-image';
 
 const ProfileCard = (props) => {
 
@@ -86,11 +85,19 @@ const ProfileCard = (props) => {
         </Popover.Content>
     </Popover>
   );
+
+  const downloadCard = (e) => {
+    const profileCard = e.target.closest('.profile-card');
+    domtoimage.toBlob(profileCard)
+      .then(function (blob) {
+          saveAs(blob, `naijahacks-profile_${user._id}.png`);
+      });
+  }
   
   return (
     <>
       <Col xs={12} sm={12} md={4} className="mb-5">
-        <Card style={{ border: 0 }} className="shadow-sm">
+        <Card className="card shadow-sm profile-card">
           <Card.Header className="profile-header">
             <Card.Img variant="top" src={avatar} className="profile-img" />
           </Card.Header>              
@@ -115,9 +122,11 @@ const ProfileCard = (props) => {
               <FontAwesomeIcon icon="eye" className="mr-1" color="#fff" />
             </Link>            
             <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-              <Button className="fab-btn text-white ml-1 d-flex justify-content-center" title="Share Profile">
+              <Button className="fab-btn text-white ml-1 mr-1 d-flex justify-content-center" title="Share Profile">
                 <FontAwesomeIcon icon="share-alt" className="mr-1" color="#fff" /></Button>
             </OverlayTrigger>
+            <Button className="fab-btn text-white ml-1 d-flex justify-content-center download-card" title="Download Profile Card" onClick={downloadCard}>
+                <FontAwesomeIcon icon="cloud-download-alt" className="mr-1" color="#fff" /></Button>
           </Card.Footer>
         </Card>
       </Col>

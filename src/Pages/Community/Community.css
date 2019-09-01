@@ -7,9 +7,9 @@
 
 .portal-header {
     background: var(--portal-light-green); 
-    background-image: url(../../img/portal/dev.png);
-    background-repeat: no-repeat;
-    background-size: 300px;
+    background-image: url(../../img/portal/dev.png), url(../../img/favicon.png);;
+    background-repeat: no-repeat, repeat;
+    background-size: 300px, 1px;
     background-position: center;
     min-height: 400px;
 }

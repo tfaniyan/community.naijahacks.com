@@ -20,8 +20,10 @@
 
 .profile-header {
     min-height: 100px;
-    background: var(--portal-light-green);
-}    
+    background-color: var(--portal-light-green);
+    background-image: url(../../img/favicon.png);
+    background-blend-mode: overlay;
+}  
 
 .fab-btn {
     border-radius: 50%;

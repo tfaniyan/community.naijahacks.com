@@ -3,7 +3,7 @@ import "./Community.css";
 import Header from "../../Components/Header";
 import FilterBox from "../../Components/FilterBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Container, Row, Dropdown } from "react-bootstrap";
+import { Container, Row, Dropdown, Pagination } from "react-bootstrap";
 import ProfileCard from "../../Components/ProfileCard";
 import axios from 'axios';
 
@@ -13,6 +13,23 @@ import users from "../../data/users.json";
 class Community extends React.Component {
 
   render() {
+
+    let active = 2;
+    let items = new Array();
+    for (let number = 1; number <= 5; number++) {
+      items.push(
+        <Pagination.Item key={number} active={number === active}>
+          {number}
+        </Pagination.Item>
+      );
+    }
+
+    const pagination = (
+      <div>
+        <Pagination>{items}</Pagination>
+        <br />
+      </div>
+    );
     
     return (
       <>
@@ -44,6 +61,9 @@ class Community extends React.Component {
                 return (<ProfileCard user={user} key={i} />)
               }) 
             }
+          </Row>
+          <Row className="d-flex justify-content-center">
+            {pagination}
           </Row>
         </section>
       </Container>
