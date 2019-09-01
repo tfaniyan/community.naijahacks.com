@@ -87,7 +87,7 @@ const ProfileCard = (props) => {
   );
 
   const downloadCard = (e) => {
-    const profileCard = e.target.closest('.profile-card');
+    const profileCard = e.target.closest('.card-footer').previousSibling;
     domtoimage.toBlob(profileCard)
       .then(function (blob) {
           saveAs(blob, `naijahacks-profile_${user._id}.png`);
@@ -97,7 +97,7 @@ const ProfileCard = (props) => {
   return (
     <>
       <Col xs={12} sm={12} md={4} className="mb-5">
-        <Card className="card shadow-sm profile-card">
+        <Card className="card shadow-sm profile-card" style={{ zIndex: '-1' }}>
           <Card.Header className="profile-header">
             <Card.Img variant="top" src={avatar} className="profile-img" />
           </Card.Header>              
@@ -117,7 +117,8 @@ const ProfileCard = (props) => {
               <FontAwesomeIcon icon="star" className="mr-1 rate-icon" />
             </Card.Text>            
           </Card.Body>
-          <Card.Footer className="d-flex justify-content-center align-items-center b-0" style={{ background: 'transparent', height: 0, border: 0 }}>
+        </Card>
+        <Card.Footer className="d-flex justify-content-center align-items-center b-0" style={{ background: 'transparent', height: 0, border: 0 }}>
             <Link to={`/profile/${user._id}`} className="fab-btn text-white mr-1 d-flex justify-content-center" title="View Profile">
               <FontAwesomeIcon icon="eye" className="mr-1" color="#fff" />
             </Link>            
@@ -128,7 +129,6 @@ const ProfileCard = (props) => {
             <Button className="fab-btn text-white ml-1 d-flex justify-content-center download-card" title="Download Profile Card" onClick={downloadCard}>
                 <FontAwesomeIcon icon="cloud-download-alt" className="mr-1" color="#fff" /></Button>
           </Card.Footer>
-        </Card>
       </Col>
     </>
   );
