@@ -1,6 +1,9 @@
 :root {
     --portal-dark-color: #252A34;
     --portal-green-color: #66E348;
+    --portal-gray-color: #ededef;
+    --portal-light-green: #00994c;
+    --portal-dark-green: #009048;
     --active-rate-color: #FBBC1B;
     --disable-rate-color: #9E9E9E;  
 }
@@ -17,7 +20,7 @@
 
 .profile-header {
     min-height: 100px;
-    background: var(--portal-dark-color);
+    background: var(--portal-light-green);
 }    
 
 .fab-btn {
@@ -25,19 +28,20 @@
     padding: 1rem;
     width: 48px;
     height: 48px;
-    background: var(--portal-green-color);
-    border: 1px solid var(--portal-green-color);
+    background: var(--portal-dark-green);
+    border: 1px solid var(--portal-dark-green);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
 }
 
 .fab-btn:hover,
-.fab-btn:focus {
+.fab-btn:focus,
+.fab-btn:active {
     border-radius: 50%;
     padding: 1rem;
     width: 48px;
     height: 48px;
-    background: var(--portal-green-color);
-    border: 1px solid var(--portal-green-color);
+    background: var(--portal-dark-green);
+    border: 1px solid var(--portal-dark-green);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 

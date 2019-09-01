@@ -1,6 +1,6 @@
 import React from "react";
 import "./Community.css";
-import SearchHeader from "../../Components/SearchHeader";
+import Header from "../../Components/Header";
 import FilterBox from "../../Components/FilterBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Dropdown } from "react-bootstrap";
@@ -9,31 +9,15 @@ import axios from 'axios';
 
 import users from "../../data/users.json";
 
+
 class Community extends React.Component {
 
-  // state = {
-  //   users: []
-  // }
-
-  // constructor(){
-  //   super();
-  // }
-
-  // componentDidMount() {
-  //   // axios.get(`users`)
-  //   //   .then(res => {
-  //   //     const users = res.data;
-  //   //     this.setState({ users });
-  //   //   })
-  //   // this.setState({ users });
-  // }
-
   render() {
-
+    
     return (
       <>
       <header className="portal-header d-flex flex-column justify-content-between">
-        <SearchHeader />
+        <Header />
         <h2 className="text-white mb-5">"Find talents on our portal"</h2>
       </header>
       

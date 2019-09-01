@@ -1,9 +1,12 @@
 :root {
     --portal-dark-color: #252A34;
+    --portal-gray-color: #ededef;
+    --portal-light-green: #00994c;
+    --portal-dark-green: #009048;
 }
 
 .portal-header {
-    background: var(--portal-dark-color);
+    background: var(--portal-light-green); 
     background-image: url(../../img/portal/dev.png);
     background-repeat: no-repeat;
     background-size: 300px;

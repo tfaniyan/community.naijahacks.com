@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const SearchHeader = () => {
   return (
     <>
-      <Navbar className="portal-nav justify-content-between">
+      <Navbar bg="light" variant="light" className="justify-content-between">
         <div className="d-flex flex-row justify-content-center">
         <Navbar.Brand href="/">
           <img src={logo} style={{ height: "40px" }} alt="NaijaHack-logo" />
