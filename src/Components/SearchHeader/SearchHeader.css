@@ -1,0 +1,15 @@
+:root {
+    --portal-dark-color: #252A34;
+}
+
+.search-btn {
+    background: none;
+    border: 0;
+    outline: 0 none;
+}
+
+.portal-nav {
+    background: var(--portal-dark-color);
+}
+
+    

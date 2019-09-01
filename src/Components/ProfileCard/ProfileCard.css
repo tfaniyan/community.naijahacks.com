@@ -1,0 +1,69 @@
+:root {
+    --portal-dark-color: #252A34;
+    --portal-green-color: #66E348;
+    --portal-gray-color: #ededef;
+    --portal-light-green: #00994c;
+    --portal-dark-green: #009048;
+    --active-rate-color: #FBBC1B;
+    --disable-rate-color: #9E9E9E;  
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    position: relative;
+    bottom: -40px;
+}
+
+.profile-header {
+    min-height: 100px;
+    background-color: var(--portal-light-green);
+    background-image: url(../../img/favicon.png);
+    background-blend-mode: overlay;
+}  
+
+.fab-btn {
+    border-radius: 50%;
+    padding: 1rem;
+    width: 48px;
+    height: 48px;
+    background: var(--portal-dark-green);
+    border: 1px solid var(--portal-dark-green);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+}
+
+.fab-btn:hover,
+.fab-btn:focus,
+.fab-btn:active {
+    border-radius: 50%;
+    padding: 1rem;
+    width: 48px;
+    height: 48px;
+    background: var(--portal-dark-green);
+    border: 1px solid var(--portal-dark-green);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rate-icon {
+    color: var(--disable-rate-color);
+
+}
+.rate-icon.active {
+    color: var(--active-rate-color);
+}
+
+.network__share-button {
+    cursor: pointer;
+}
+
+.popup-header {
+    background: var(--active-rate-color);
+    border:1px solid var(--active-rate-color);
+}
+
+#popover-basic {
+    border:1px solid var(--portal-green-color);
+}
